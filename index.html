@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<!--
+	Visualize by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>CV Francisco Ferioli</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Cascading Style Sheet -->
+		<link rel="stylesheet" href="css/main.css" />
+
+		<!-- Scripts -->
+		<script defer src="js/abrirMenu.js"></script>
+		<script defer src="js/geolocation.js"></script>
+		<script defer src="js/lorem.js"></script>
+		<script defer src="js/menu.js"></script>
+		<script defer src="js/scroll_indicator.js"></script>
+		<script defer src="js/settings.js"></script>
+		<script defer src="js/typewriter.js"></script>
+		<script defer src="fontawesome-free-6.2.1-web/js/all.js"></script>
+		<script defer src="fontawesome-free-6.2.1-web/js/brands.js"></script>
+		<script defer src="fontawesome-free-6.2.1-web/js/solid.js"></script>
+		<script defer src="fontawesome-free-6.2.1-web/js/fontawesome.js"></script>
+
+	</head>
+
+	<!-- Body -->
+	<body>
+
+		<!-- Container -->
+		<div id="container">
+
+			<!-- Header 1 -->
+			<header>
+				<img id="avatar" src="img/avatar.jpg" alt="avatar" />
+				<h1><a href="https://franciscoferiolimarco.neocities.org/">Francisco Ferioli</a></h1>
+				<h1>Curriculum Vitae</h1>
+			</header>
+
+	<!-- Tab links -->
+	<div class="topnav" id="myTopnav">
+		<a href="javascript:void(0);" class="hamburguesa" onclick="abrirMenu()"><i class="fa-solid fa-bars fa-2xl"></i></a>
+		<button class="tablinks" onclick="abrirPestania(event, 'Inicio')"><i class="fa-solid fa-house fa-2xl"></i><p>Inicio</p></button>
+		<button class="tablinks" onclick="abrirPestania(event, 'Datos personales')"><i class="fa-solid fa-user fa-2xl"></i><p>Datos personales</p></button>
+		<button class="tablinks" onclick="abrirPestania(event, 'Experiencia laboral')"><i class="fa-solid fa-briefcase fa-2xl"></i><p>Experiencia laboral</p></button>
+		<button class="tablinks" onclick="abrirPestania(event, 'Experiencia de voluntariado')"><i class="fa-solid fa-heart fa-2xl"></i><p>Experiencia de voluntariado</p></button>
+		<button class="tablinks" onclick="abrirPestania(event, 'Educacion')"><i class="fa-solid fa-book-open fa-2xl"></i><p>Educacion</p></button>
+		<button class="tablinks" onclick="abrirPestania(event, 'Idiomas')"><i class="fa-solid fa-language fa-2xl"></i><p>Idiomas</p></button>
+		<button class="tablinks" onclick="abrirPestania(event, 'Habilidades')"><i class="fa-solid fa-camera fa-2xl"></i><p>Habilidades</p></button>
+		<button class="tablinks" onclick="abrirPestania(event, 'Lorem')"><i class="fa-solid fa-comment fa-2xl"></i><p>Lorem ipsum</p></button>
+		<button id="find-me"><i class="fa-solid fa-location-dot fa-2xl"></i><p>Mi ubicacion</p></button>
+		<button class="tablinks" onclick="abrirPestania(event, 'Configuracion')"><i class="fa-solid fa-gear fa-2xl"></i><p>Configuracion</p></button>
+	</div>
+
+		<div class="progress-container" id="pContainer">
+			<div class="progress-bar" id="myBar"></div>
+		</div>
+
+	<div id="Inicio" class="tabcontent">
+		<h2><i class="fa-solid fa-house fa-2xl"></i> Inicio</h2>
+		<p>Bienvenido a mi sitio web!!!</p>
+		<div class="container py-5">
+		  <div class="output" id="output">
+			<h1 class="cursor"></h1>
+			<p></p>
+		  </div>
+		</div>
+		<p>Gracias por visitarme desde </p>
+		<p id="status"></p>
+		<p><a id="map-link" target="_blank"></a></p><br>
+		<!-- <iframe id="mimapa" src=""></iframe><br>
+		<a id="mienlace" class="larger_map" href="">Ver mapa mas grande</a> -->
+	</div>
+
+	<!-- Tab content -->
+	<div id="Datos personales" class="tabcontent">
+		<h2><i class="fa-solid fa-user fa-2xl"></i> Datos personales</h2>
+		<ul>
+			<li>Nombre: Francisco.</li>
+			<li>Apellido: Ferioli.</li>
+			<li>Tipo de identificacion: D.N.I. 39.681.432.</li>
+			<li>Fecha de nacimiento: 29 de Julio de 1996.</li>
+			<li>Estado civil: soltero.</li>
+			<li>Telefono: <a href="tel:+5492996068498">+5492996068498</a>.</li>
+			<li>Correo electronico: <a href="mailto:franciscoferiolimarco@protonmail.com">f...@protonmail.com</a>.</li></li>
+			<li>Blog: <a href="https://franciscoferiolimarco.neocities.org/">f---.neocities.org</a>.</li></li>
+			<li>Pais: Argentina.</li>
+			<li>Provincia: Río Negro.</li>
+			<li>Ciudad: Cipolletti.</li>
+			<li>Codigo postal: 8324.</li>
+			<li>Direccion: Urquiza 455.</li>
+			<li>Nacionalidad: Argentinian.</li>
+			<li>Licencia de conducir: B1.</li>
+		</ul>
+		<iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-68.00077915191652%2C-38.93765615861767%2C-67.98661708831789%2C-38.930420489465305&amp;layer=mapnik&amp;marker=-38.93403841631807%2C-67.99369812011719">
+		</iframe>
+		<br/>
+		<a id="larger_map" href="https://www.openstreetmap.org/?mlat=-38.93404&amp;mlon=-67.99370#map=17/-38.93404/-67.99370">Ver mapa mas grande</a>
+	</div>
+
+	<div id="Experiencia laboral" class="tabcontent">
+		<h2><i class="fa-solid fa-briefcase fa-2xl"></i> Experiencia laboral</h2>
+		<ul>
+			<li>Secretario, La Cultural Inglesa de Cipolletti. Octubre 2019 – presente.</li>
+		</ul>
+	</div>
+
+	<div id="Experiencia de voluntariado" class="tabcontent">
+		<h2><i class="fa-solid fa-heart fa-2xl"></i> Experiencia de voluntariado</h2>
+		<ul>
+			<li>Curator and prospectus author, arboladourbano.com. 2017 – 2020.</li>
+			<li>Prospectus author and organized, Biogás UNLP. 2017.</li>
+		</ul>
+	</div>
+
+	<div id="Educacion" class="tabcontent">
+		<h2><i class="fa-solid fa-book-open fa-2xl"></i> Educacion</h2>
+		<ul>
+				<li>Grado: Licenciatura en Computacion, Facultad de Informatica, Universidad Nacional del Comahue. Febrero 2023 – presente.</li>
+				<li>Grado: Ingenieria Agronomica, Facultad de Ciencias Agrarias, Universidad Nacional del Comahue. Febrero 2018 – Diciembre 2019.</li>
+				<li>Escuela secundaria: CEM N°5 “Alicia Moreau de Justo”. Febrero 2013 – Marzo 2016.</li>
+		</ul>
+	</div>
+
+	<div id="Idiomas" class="tabcontent">
+		<h2><i class="fa-solid fa-language fa-2xl"></i> Idiomas</h2>
+		<ul>
+			<li>Ingles: advanzado (EF Standard English Test certificate of achievement, level C1 according to European Council's CEFR, Oxford, United Kingdom, February 13th of 2015).</li>
+			<li>Frances: basico.</li>
+			<li>Italiano: basico.</li>
+		</ul>
+	</div>
+
+	<div id="Habilidades" class="tabcontent">
+		<h2><i class="fa-solid fa-camera fa-2xl"></i> Habilidades</h2>
+		<ul>
+			<li>Fotografia (foto de tapa para el articulo de La Tinta <a href="https://latinta.com.ar/2016/11/salir-del-agronegocios-implica-un-cambio-de-estructuras-mentales-profundas/">“Salir del ‘agronegocio’ implica un cambio de estructuras mentales profundas”).</a></li>
+		</ul>
+	</div>
+
+	<div id="Lorem" class="tabcontent">
+		<h2><i class="fa-solid fa-comment fa-2xl"></i> Lorem ipsum</h2>
+		<p id="lorem"></p>
+	</div>
+
+	<div id="Configuracion" class="tabcontent">
+		<h2><i class="fa-solid fa-gear fa-2xl"></i> Configuracion</h2>
+		<menu>
+			<button onclick="backgroundColor()"><img class="settings" id="sun" src="fontawesome-free-6.2.1-web/svgs/solid/sun.svg"></i><p id="claro">Modo claro</p></button>
+			<button onclick="fontColor()"><img class="settings" id="" src="fontawesome-free-6.2.1-web/svgs/solid/palette.svg"></i><p id="">Color de fuente</p></button>
+			<button onclick="fontFamily()"><img class="settings" id="" src="fontawesome-free-6.2.1-web/svgs/solid/font.svg"></i><p id="">Familia de fuente</p></button>
+			<button onclick="fontSize()"><img class="settings" id="" src="fontawesome-free-6.2.1-web/svgs/solid/plus.svg"></i><p id="">Tamanio de fuente</p></button>
+			<button onclick="textAlign()"><img class="settings" id="" src="fontawesome-free-6.2.1-web/svgs/solid/align-left.svg"></i><p id="">Alineacion de texto</p></button>
+		</menu>
+	</div>
+
+	<hr>
+
+			<!-- Footer -->
+			<footer>
+				<p>(Ↄ) <strong>Francisco Ferioli Marco</strong> 2018 - Presente. Algunos derechos reservados.</p>
+				<p><a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license"><img id="cc_label" src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png" alt="Creative Commons License" /></a></p>
+			</footer>
+
+		</div>
+
+	</body>
+</html>
