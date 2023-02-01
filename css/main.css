@@ -231,7 +231,7 @@ footer {
 		background: #ccc;
 		height: 4px;
 		position: sticky;
-		top: 8em;
+		top: 4em;
 		width: 100%;
 	}
 
@@ -240,20 +240,20 @@ footer {
 		background: #04AA6D;
 		height: 4px;
 		position: sticky;
-		top: 8em;
+		top: 4em;
 		width: 0%;
 	}
 
 	/* The progress container (grey background) */
 	.progress-container.responsive {
 		position: static;
-		top: 4px;
+		top: 4em;
 	}
 
 	/* The progress bar (scroll indicator) */
 	.progress-bar.responsive {
 		position: static;
-		top: 4px;
+		top: 4em;
 	}
 
 	iframe {
