@@ -1,3 +1,21 @@
+function scrollIndicatorContainer() {
+	var sir = document.getElementById("pContainer");
+	if (sir.className === "progress-container") {
+		sir.className += " responsive";
+	} else {
+		sir.className = "progress-container";
+	}
+}
+
+function scrollIndicatorBar() {
+	var sir = document.getElementById("myBar");
+	if (sir.className === "progress-bar") {
+		sir.className += " responsive";
+	} else {
+		sir.className = "progress-bar";
+	}
+}
+
 function abrirMenu() {
 	var x = document.getElementById("myTopnav");
 	if (x.className === "topnav") {
@@ -6,23 +24,8 @@ function abrirMenu() {
 		x.className = "topnav";
 	}
 
-	function scrollIndicatorContainer() {
-		var sir = document.getElementById("pContainer");
-		if (sir.className === "progress-container") {
-			sir.className += " responsive";
-		} else {
-			sir.className = "progress-container";
-		}
-	}
-
-	function scrollIndicatorBar() {
-		var sir = document.getElementById("myBar");
-		if (sir.className === "progress-bar") {
-			sir.className += " responsive";
-		} else {
-			sir.className = "progress-bar";
-		}
-	}
+	scrollIndicatorContainer.responsive();
+	scrollIndicatorBar.responsive();
 
 }
 
@@ -30,6 +33,24 @@ function abrirMenu() {
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+function scrollIndicatorContainer() {
+	var sir = document.getElementById("pContainer");
+	if (sir.className === "progress-container responsive") {
+		sir.className = "progress-container";
+	} else {
+		sir.className = "progress-container";
+	}
+}
+
+function scrollIndicatorBar() {
+	var sir = document.getElementById("myBar");
+	if (sir.className === "progress-bar responsive") {
+		sir.className = "progress-bar";
+	} else {
+		sir.className = "progress-bar";
+	}
 }
 
 function cerrarMenu() {
@@ -40,24 +61,8 @@ function cerrarMenu() {
 		x.className = "topnav responsive";
 	}
 
-	function scrollIndicatorContainer() {
-		var sir = document.getElementById("pContainer");
-		if (sir.className === "progress-container responsive") {
-			sir.className = "progress-container";
-		} else {
-			sir.className = "progress-container";
-		}
-	}
-
-	function scrollIndicatorBar() {
-		var sir = document.getElementById("myBar");
-		if (sir.className === "progress-bar responsive") {
-			sir.className = "progress-bar";
-		} else {
-			sir.className = "progress-bar";
-		}
-	}
-
+	scrollIndicatorContainer();
+	scrollIndicatorBar();
 	topFunction();
 
 }
