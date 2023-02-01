@@ -198,7 +198,7 @@ footer {
 /**************************************************/
 
 	.topnav {
-		height: 2em;
+		height: 3em;
 		width: 100%;
 	}
 	.topnav button:not(:first-child) {display: none;}
