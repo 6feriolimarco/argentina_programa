@@ -229,7 +229,7 @@ footer {
 	/* The progress container (grey background) */
 	.progress-container {
 		background: #ccc;
-		height: 8px;
+		height: 4px;
 		position: sticky;
 		top: 8em;
 		width: 100%;
@@ -238,7 +238,7 @@ footer {
 	/* The progress bar (scroll indicator) */
 	.progress-bar {
 		background: #04AA6D;
-		height: 8px;
+		height: 4px;
 		position: sticky;
 		top: 8em;
 		width: 0%;
@@ -247,13 +247,13 @@ footer {
 	/* The progress container (grey background) */
 	.progress-container.responsive {
 		position: static;
-		top: 8px;
+		top: 4px;
 	}
 
 	/* The progress bar (scroll indicator) */
 	.progress-bar.responsive {
 		position: static;
-		top: 8px;
+		top: 4px;
 	}
 
 	iframe {
