@@ -1,0 +1,267 @@
+@charset "UTF-8";
+
+@import url(fontawesome-free-6.2.1-web/css/all.css);
+@import url(css/lorem.css);
+@import url(css/typewriter.css);
+
+body {
+	background-image: linear-gradient(to right, #155997 0%, #15915f 100%);
+	color: #ffffff;
+	display: grid;
+	font-family: sans-serif;
+	grid-template-columns: repeat(12, 1fr);
+	margin: 5em 0em 0em 0em;
+}
+
+/* Settings tab */
+
+.icons {
+	border: solid #000000;
+	border-radius: 100%;
+	filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(261deg) brightness(105%) contrast(102%);
+	padding: 10px;
+	width: 2em;
+}
+
+.backgroundColor {
+	background-color: #000000;
+	background-image: none;
+}
+
+.fontColor {
+	color: #ff00ff;
+}
+
+.fontFamily {
+	font-family: serif;
+}
+
+.fontSize {
+	font-size: large;
+}
+
+.textAlign {
+	text-align: left;
+}
+
+/* Else */
+
+#container {
+	grid-column: 3 / 11;
+}
+
+header {
+	text-align: center;
+}
+
+#avatar {
+	border: solid #ffffff;
+	border-radius: 100%;
+	padding: 5px;
+	width: 10em;
+}
+
+a {
+	color: #ffffff;
+}
+
+[class^="fa-solid"] {
+	font-size: big;
+}
+
+ /* Style the tab */
+.topnav {
+	align-items: start;
+	background-color: #333333;
+	border: 1px solid #ccc;
+	display: flex;
+	height: 8em;
+	justify-content: center;
+	list-style: none;
+	overflow: hidden;
+	position: sticky;
+	text-align: center;
+	top: 0em;
+}
+
+.topnav a.hamburguesa {
+	display: none;
+}
+
+/* Style the buttons that are used to open the tab content */
+.topnav button {
+	background-color: inherit;
+	color: #ffffff;
+	float: right;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 1em 1em 1em 1em;
+	text-align: center;
+	transition: 0.3s;
+	width: 10em;
+}
+
+/* Change background color of buttons on hover */
+.topnav button:hover {
+	background-color: #808080;
+}
+
+/* Create an active/current tablink class */
+.topnav button.active {
+	background-color: #000000;
+}
+
+button svg {
+	border: solid #ffffff;
+	border-radius: 100%;
+	color: #ffffff;
+	padding: 10px;
+}
+
+/* Style the tab content */
+.tabcontent {
+	display: none;
+	padding: 1em 2em;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+	position: sticky;
+	width: 100%;
+	height: 8px;
+	top: 7.5em;
+	background: #ccc;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+	position: sticky;
+	height: 8px;
+	background: #04AA6D;
+	top: 7.5em;
+	width: 0%;
+}
+
+iframe {
+	width: 320px;
+	height: 188px;
+	border: 1px solid black;
+	margin: 0px;
+}
+
+.larger_map {
+	font-size: small;
+}
+
+#lorem {
+	text-align: justify;
+}
+
+hr {
+	color: #ffffff;
+	width: 50%;
+}
+
+footer {
+	justify-content: center;
+	padding: 0.2em;
+	text-align: center;
+}
+
+#cc_label {
+	width: 12%;
+}
+
+#cc_label:hover {
+	box-shadow: 0px 0px 5px 5px #ffffff;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+	.topnav {
+		flex-wrap: wrap;
+		width: 10%;
+	}
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+	body {
+		margin: 1em 0em 0em 0em;
+	}
+	#container {
+		grid-column: 1 / 13;
+	}
+
+/**************************************************/
+
+	.topnav {
+		height: 4em;
+		width: 100%;
+	}
+	.topnav button:not(:first-child) {display: none;}
+	.topnav a.hamburguesa {
+		float: right;
+		display: block;
+	}
+	.topnav.responsive {
+		height: 1000px;
+		position: sticky;
+	}
+	.topnav.responsive .hamburguesa {
+		float: right;
+		position: relative;
+		right: 10%;
+		top: 0;
+		justify-content: center;
+		width: 100%;
+	}
+	.topnav.responsive button {
+		float: none;
+		display: block;
+		text-align: center;
+	}
+
+/**************************************************/
+
+	/* The progress container (grey background) */
+	.progress-container {
+		background: #ccc;
+		height: 4px;
+		position: sticky;
+		top: 8em;
+		width: 100%;
+	}
+
+	/* The progress bar (scroll indicator) */
+	.progress-bar {
+		background: #04AA6D;
+		height: 4px;
+		position: sticky;
+		top: 8em;
+		width: 0%;
+	}
+
+	/* The progress container (grey background) */
+	.progress-container.responsive {
+		position: static;
+		top: 4px;
+	}
+
+	/* The progress bar (scroll indicator) */
+	.progress-bar.responsive {
+		position: static;
+		top: 4px;
+	}
+
+	iframe {
+		width: 256px;
+		height: 150px;
+	}
+
+		#cc_label {
+			width: 50%;
+		}
+}
