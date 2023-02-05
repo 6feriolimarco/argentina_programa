@@ -17,13 +17,11 @@
 		<link rel="stylesheet" href="css/main.css" />
 
 		<!-- Scripts -->
-		<script defer src="js/abrirMenu.js"></script>
 		<script defer src="js/geolocation.js"></script>
 		<script defer src="js/lorem.js"></script>
 		<script defer src="js/menu.js"></script>
 		<script defer src="js/scroll_indicator.js"></script>
 		<script defer src="js/settings.js"></script>
-		<script defer src="js/typewriter.js"></script>
 		<script defer src="js/all.js"></script>
 		<script defer src="js/brands.js"></script>
 		<script defer src="js/solid.js"></script>
@@ -47,16 +45,36 @@
 	<!-- Tab links -->
 	<div class="topnav" id="myTopnav">
 		<a href="javascript:void(0);" class="hamburguesa" onclick="abrirMenu()"><img class="icons" src="img/bars-solid.svg"></a>
-		<button class="tablinks" onclick="abrirPestania(event, 'Inicio')"><img class="icons" src="img/house-solid.svg"><p>Inicio</p></button>
-		<button class="tablinks" onclick="abrirPestania(event, 'Datos personales')"><img class="icons" src="img/user-solid.svg"><p>Datos personales</p></button>
-		<button class="tablinks" onclick="abrirPestania(event, 'Experiencia laboral')"><img class="icons" src="img/briefcase-solid.svg"><p>Experiencia laboral</p></button>
-		<button class="tablinks" onclick="abrirPestania(event, 'Experiencia de voluntariado')"><img class="icons" src="img/heart-solid.svg"><p>Experiencia de voluntariado</p></button>
-		<button class="tablinks" onclick="abrirPestania(event, 'Educacion')"><img class="icons" src="img/book-open-solid.svg"><p>Educacion</p></button>
-		<button class="tablinks" onclick="abrirPestania(event, 'Idiomas')"><img class="icons" src="img/language-solid.svg"><p>Idiomas</p></button>
-		<button class="tablinks" onclick="abrirPestania(event, 'Habilidades')"><img class="icons" src="img/camera-solid.svg"><p>Habilidades</p></button>
-		<button class="tablinks" onclick="abrirPestania(event, 'Lorem')"><img class="icons" src="img/comment-solid.svg"><p>Lorem ipsum</p></button>
-		<button id="find-me"><img class="icons" src="img/location-dot-solid.svg"><p>Mi ubicacion</p></button>
-		<button class="tablinks" onclick="abrirPestania(event, 'Configuracion')"><img class="icons" src="img/gear-solid.svg"><p>Configuracion</p></button>
+		<a href="#Inicio">
+			<button class="tablinks" onclick="abrirPestania(event, 'Inicio')"><img class="icons" src="img/house-solid.svg"><p>Inicio</p></button>
+		</a>
+		<a href="#Datos-personales">
+			<button class="tablinks" onclick="abrirPestania(event, 'Datos-personales')"><img class="icons" src="img/user-solid.svg"><p>Datos personales</p></button>
+		</a>
+		<a href="#Experiencia-laboral">
+			<button class="tablinks" onclick="abrirPestania(event, 'Experiencia-laboral')"><img class="icons" src="img/briefcase-solid.svg"><p>Experiencia laboral</p></button>
+		</a>
+		<a href="#Experiencia-de-voluntariado">
+			<button class="tablinks" onclick="abrirPestania(event, 'Experiencia-de-voluntariado')"><img class="icons" src="img/heart-solid.svg"><p>Experiencia de voluntariado</p></button>
+		</a>
+		<a href="#Educacion">
+			<button class="tablinks" onclick="abrirPestania(event, 'Educacion')"><img class="icons" src="img/book-open-solid.svg"><p>Educacion</p></button>
+		</a>
+		<a href="#Idiomas">
+			<button class="tablinks" onclick="abrirPestania(event, 'Idiomas')"><img class="icons" src="img/language-solid.svg"><p>Idiomas</p></button>
+		</a>
+		<a href="#Habilidades">
+			<button class="tablinks" onclick="abrirPestania(event, 'Habilidades')"><img class="icons" src="img/camera-solid.svg"><p>Habilidades</p></button>
+		</a>
+		<a href="#Lorem-ipsum">
+			<button class="tablinks" onclick="abrirPestania(event, 'Lorem-ipsum')"><img class="icons" src="img/comment-solid.svg"><p>Lorem ipsum</p></button>
+		</a>
+		<a href="#Mi-ubicacion">
+			<button id="find-me"><img class="icons" src="img/location-dot-solid.svg"><p>Mi ubicacion</p></button>
+		</a>
+		<a href="#Configuracion">
+			<button class="tablinks" onclick="abrirPestania(event, 'Configuracion')"><img class="icons" src="img/gear-solid.svg"><p>Configuracion</p></button>
+		</a>
 	</div>
 
 		<div class="progress-container" id="pContainer">
@@ -80,7 +98,7 @@
 	</div>
 
 	<!-- Tab content -->
-	<div id="Datos personales" class="tabcontent">
+	<div id="Datos-personales" class="tabcontent">
 		<h2><i class="fa-solid fa-user fa-2xl"></i> Datos personales</h2>
 		<ul>
 			<li>Nombre: Francisco.</li>
@@ -105,14 +123,14 @@
 		<a id="larger_map" href="https://www.openstreetmap.org/?mlat=-38.93404&amp;mlon=-67.99370#map=17/-38.93404/-67.99370">Ver mapa mas grande</a>
 	</div>
 
-	<div id="Experiencia laboral" class="tabcontent">
+	<div id="Experiencia-laboral" class="tabcontent">
 		<h2><i class="fa-solid fa-briefcase fa-2xl"></i> Experiencia laboral</h2>
 		<ul>
 			<li>Secretario, La Cultural Inglesa de Cipolletti. Octubre 2019 – presente.</li>
 		</ul>
 	</div>
 
-	<div id="Experiencia de voluntariado" class="tabcontent">
+	<div id="Experiencia-de-voluntariado" class="tabcontent">
 		<h2><i class="fa-solid fa-heart fa-2xl"></i> Experiencia de voluntariado</h2>
 		<ul>
 			<li>Curator and prospectus author, arboladourbano.com. 2017 – 2020.</li>
@@ -145,7 +163,7 @@
 		</ul>
 	</div>
 
-	<div id="Lorem" class="tabcontent">
+	<div id="Lorem-ipsum" class="tabcontent">
 		<h2><i class="fa-solid fa-comment fa-2xl"></i> Lorem ipsum</h2>
 		<p id="lorem"></p>
 	</div>
