@@ -135,7 +135,7 @@ button svg {
 	position: sticky;
 	width: 100%;
 	height: 8px;
-	top: 2.5em;
+	top: 8em;
 	background: #ccc;
 }
 
@@ -144,7 +144,7 @@ button svg {
 	position: sticky;
 	height: 8px;
 	background: #04AA6D;
-	top: 2.5em;
+	top: 8em;
 	width: 0%;
 }
 
