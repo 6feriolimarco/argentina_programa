@@ -82,7 +82,7 @@ a {
 	overflow: hidden;
 	position: sticky;
 	text-align: center;
-	top: -5em;
+	top: 0em;
 }
 
 .topnav a {
